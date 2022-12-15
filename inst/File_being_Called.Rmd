@@ -15,7 +15,7 @@ params:
 knitr::opts_chunk$set(echo = TRUE)
 
 # Declare location of this script relative to the project root directory.
-here::i_am(path = "inst//File_Being_Called.Rmd")
+here::i_am(path = "inst/File_Being_Called.Rmd")
 ```
 
 ```{r load-packages-2, echo=FALSE, include=FALSE}
@@ -49,7 +49,15 @@ Here are the parameters:
 <strong><h4>The Data File is: `r params$data_file`</h4></strong>
 
 
-```{r import-data}
+
+```{r}
+
+here::here()
+
+```
+
+
+```{r import-data, eval=FALSE}
 
 data_file <- read.csv(file = here("file.csv")) %>%
   dplyr::mutate(Date = as.Date(Date))
