@@ -26,3 +26,13 @@ print(paste0("The current value of the params list is: ",params))
 
 
 ```
+
+
+```{r looping-print-params}
+
+
+lapply(params, message)
+
+
+```
+
