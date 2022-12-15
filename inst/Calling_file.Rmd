@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 # Declare location of this script relative to the project root directory.
-here::i_am(path = "inst//Calling_File.Rmd")
+here::i_am(path = "inst/Calling_File.Rmd")
 
 # Store the paths to folders where we want to put script run log and report 
 # outputs. 
