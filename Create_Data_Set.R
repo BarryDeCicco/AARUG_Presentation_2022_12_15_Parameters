@@ -23,11 +23,10 @@ adjustment <-
 data_set <- rbind(date_var, quarter_var, random_var) %>% as.data.frame()
 
 data_set <- data_set %>% ungroup() %>%
-  dplyr::mutate(adjustment = ifelse(quarter_var == 1, 3,0)
-  )
+  dplyr::mutate(adjustment = 1) %>%
+  dplyr::mutate(adjustment = as.numeric(adjustment)) %>%
+  dplyr::mutate(adjustment = ifelse(quarter_var == 1, 3,adjustment))
 
-)
-)
 
 
 #### END OF Create Columns, then bind to become a data frame           ####
