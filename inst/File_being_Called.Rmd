@@ -37,5 +37,18 @@ library(lubridate)    # for today()
 This file has a list of parameters which start it.  They can be changed.
 Here are the parameters:
 
-<strong>The Year is: `r params$year`</strong>
+<strong><h4>The Year is: `r params$year`</h4></strong>
 
+<strong><h4>The Start Date (for reporting) is: `r params$start_date`</h4></strong>
+
+<strong><h4>The End Date (for reporting) is:  `r params$end_date`</h4></strong>
+
+<strong><h4>The Region is: `r params$Europe`</h4></strong>
+
+<strong><h4>The Data File is: `r params$file.csv`</h4></strong>
+
+
+  
+  
+  
+  
