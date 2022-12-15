@@ -13,6 +13,9 @@ params:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+# Declare location of this script relative to the project root directory.
+here::i_am(path = "inst//File_Being_Called.Rmd")
 ```
 
 ```{r load-packages, echo=FALSE}

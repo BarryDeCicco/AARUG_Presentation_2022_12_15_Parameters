@@ -49,7 +49,17 @@ print(params)
 
 ```
 
-```{r}
+```{r render-report}
+
+rmarkdown::render("File_being_Called.Rmd")
+
+
+# , params = list(
+#   year = 2017,
+#   region = "Asia",
+#   printcode = FALSE,
+#   file = "file2.csv"
+# ))
 
 ```
 
