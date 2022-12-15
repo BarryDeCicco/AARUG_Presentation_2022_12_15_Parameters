@@ -73,6 +73,27 @@ head(data_file)
 
 
 
+```{r plot-data}
+
+region_selected <-  `r params$region` 
+plot_title <- paste0("Line Chart for Region = ", region_selected)
+
+data_file %>% 
+  dplyr::filter(Region == region_selected) %>% 
+  ggplot(.,aes(x = Date, y=Value)) +
+    geom_line() +
+    labs(title=plot_title,x="Date", y = "Value")+
+    theme_classic() +
+  scale_x_date(date_breaks = "3 months",date_labels = "%m-%Y") +
+  theme(axis.text.x=element_text(angle=60, hjust=1)) 
+  
+  
+  
+
+  
+
+
+```
 
 
 
