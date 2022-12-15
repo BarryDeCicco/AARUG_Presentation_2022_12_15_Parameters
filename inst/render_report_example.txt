@@ -1,0 +1,20 @@
+```{r, eval = TRUE}
+# Time rendering.
+render.start <- proc.time()
+
+# Render a report using the input file as a template.  
+
+render_report = function(RunDate = today(),
+                         FY = params$FYA,
+                         FYS = format(as_date(FYSDate), format = "%m/%d/%y"),
+                         FYE = format(as_date(FYEDate), format = "%m/%d/%y"),
+                         MT = paste(params$FYA, "Weekly Specialist Effort Report"), 
+                         OF = paste0("Reports/CSTAT_", FY, "_WSER_", RunDate, ".pdf"),
+                         LH = paste0("CSTAT ", FY, " WSER"), 
+                         LF = paste0("CSTAT_", FY, "_WSER_", RunDate, ".pdf")) {
+    rmarkdown::render(input = "CSTAT_FY23_WSER_Template.Rmd", 
+                      params = list(FYear = FY, FYStart = FYS, FYEnd = FYE, 
+                                    LHeader = LH, MyTitle = MT, LFooter = LF),
+                      output_file = OF)
+}
+```
