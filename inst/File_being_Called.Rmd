@@ -51,10 +51,11 @@ Here are the parameters:
 
 ```{r import-data}
 
-data_file <- read.csv("inst/file.csv") %>%
+data_file <- read.csv(file = here("file.csv")) %>%
   dplyr::mutate(Date = as.Date(Date))
 
 dim(data_file)
+
 
 ```
 
