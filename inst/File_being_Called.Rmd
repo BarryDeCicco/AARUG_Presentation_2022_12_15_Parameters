@@ -73,9 +73,10 @@ head(data_file)
 
 
 
-```{r plot-data}
+```{r plot-data, eval=TRUE}
 
-region_selected <-  `r params$region` 
+region_selected <-  params$region
+
 plot_title <- paste0("Line Chart for Region = ", region_selected)
 
 data_file %>% 
