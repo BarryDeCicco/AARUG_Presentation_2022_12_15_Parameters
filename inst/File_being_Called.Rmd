@@ -11,7 +11,7 @@ params:
   data: file.csv
 ---
 
-```{r setup, include=FALSE}
+```{r setup-2, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
 # Declare location of this script relative to the project root directory.
