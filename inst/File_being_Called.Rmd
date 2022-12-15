@@ -22,7 +22,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r print_class_params}
 
-print("The current value of the params list is: /n")
-print(params)
+print("The current value of the params list is: " params)
+
 
 ```
