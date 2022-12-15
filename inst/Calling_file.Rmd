@@ -35,6 +35,8 @@ library(rmarkdown)    # for render()
 library(knitr)        # for kable()
 library(lubridate)    # for today()
 library(magrittr)     # for the pipe
+library(ggplot2)      # for graphs
+
 
 ```
 ## R Markdown
