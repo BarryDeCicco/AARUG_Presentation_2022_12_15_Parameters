@@ -57,14 +57,14 @@ here::here("inst")
 ```
 
 
-```{r import-data, eval=FALSE}
+```{r import-data, eval=TRUE}
 
-data_file <- read.csv(file = here("file.csv")) %>%
+data_file <- read.csv(file = here("inst","file.csv")) %>%
   dplyr::mutate(Date = as.Date(Date))
 
 ```
 
-```{r examin-date_file}
+```{r examine-date_file, eval=FALSE}
 
 head(data_file)
 ```
