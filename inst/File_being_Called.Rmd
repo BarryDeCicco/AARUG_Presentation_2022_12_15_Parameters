@@ -52,7 +52,7 @@ Here are the parameters:
 
 ```{r}
 
-here::here()
+here::here("inst")
 
 ```
 
@@ -62,11 +62,12 @@ here::here()
 data_file <- read.csv(file = here("file.csv")) %>%
   dplyr::mutate(Date = as.Date(Date))
 
-dim(data_file)
-
-
 ```
 
+```{r examin-date_file}
+
+head(data_file)
+```
 
   
 
