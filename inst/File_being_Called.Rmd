@@ -8,7 +8,7 @@ params:
   start_date: "2022-01-01"
   end_date:   "2022-21_31"
   region: Europe
-  data: file.csv
+  data_file: file.csv
 ---
 
 ```{r setup-2, include=FALSE}
@@ -43,9 +43,9 @@ Here are the parameters:
 
 <strong><h4>The End Date (for reporting) is:  `r params$end_date`</h4></strong>
 
-<strong><h4>The Region is: `r params$Europe`</h4></strong>
+<strong><h4>The Region is: `r params$region`</h4></strong>
 
-<strong><h4>The Data File is: `r params$file.csv`</h4></strong>
+<strong><h4>The Data File is: `r params$data_file`</h4></strong>
 
 
   

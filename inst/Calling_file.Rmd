@@ -8,7 +8,7 @@ output: html_document
 #   start_date: "2022-01-01"
 #   end_date:   "2022-21_31"
 #   region: Europe
-#   data: file.csv
+#   data_file: file.csv
 ---
 
 ```{r setup, include=FALSE}
@@ -59,7 +59,7 @@ rmarkdown::render(input = "File_being_Called.Rmd",
   start_date ="2022-01-01",
   end_date = "2022-21_31",
   region = "Europe",
-  data = "file.csv")
+  data_file = "file.csv")
 )
 
 
