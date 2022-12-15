@@ -63,8 +63,7 @@ data_file <- read.csv(file = here("inst","file.csv")) %>%
   dplyr::mutate(Date = as.Date(Date))
 
 ```
-
-```{r examine-date_file, eval=FALSE}
+TUREFALSE}
 
 head(data_file)
 ```
