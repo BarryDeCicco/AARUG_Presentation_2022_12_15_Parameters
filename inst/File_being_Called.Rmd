@@ -28,6 +28,7 @@ library(rmarkdown)    # for render()
 library(knitr)        # for kable()
 library(lubridate)    # for today()
 library(magrittr)     # for the pipe
+library(ggplot2)      # for graphs
 
 ```
 
@@ -50,13 +51,6 @@ Here are the parameters:
 
 
 
-```{r}
-
-here::here("inst")
-
-```
-
-
 ```{r import-data, eval=TRUE}
 
 data_file <- read.csv(file = here("inst","file.csv")) %>%
@@ -73,7 +67,7 @@ head(data_file)
 
 
 
-```{r plot-data, eval=TRUE}
+```{r plot-data, eval=TRUE, echo=FALSE}
 
 region_selected <-  params$region
 
