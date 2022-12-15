@@ -47,8 +47,15 @@ Here are the parameters:
 
 <strong><h4>The Data File is: `r params$data_file`</h4></strong>
 
+```{r import-data}
+
+data_file <- read.csv("inst/file.csv") %>%
+  dplyr::mutate(Date = as.Date(Date))
+
+dim(data_file)
+```
+
 
   
-  
-  
+
   
