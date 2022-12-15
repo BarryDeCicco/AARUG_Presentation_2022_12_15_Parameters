@@ -74,7 +74,7 @@ PAR <- list(  year = 2018,
 
 # Render the script in a fresh R session.
 Rscript_call(fun = render, 
-             args = list(input = RUN, params = PAR, output_file = LOG, 
+             args = list(input = RUN, params = PAR, output_file = LOG 
                          ))
 # End chunk timer
 chunk.end <- proc.time()
