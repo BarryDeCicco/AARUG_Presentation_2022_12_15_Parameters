@@ -44,4 +44,5 @@ vignettes/*.pdf
 *.doc
 *.pdf
 
-
+# folder:  data/extdata
+data/extdata/
