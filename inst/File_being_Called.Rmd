@@ -39,15 +39,7 @@ When you click the **Knit** button a document will be generated that includes bo
 # Parameters
 
 This file has a list of parameters which start it.  They can be changed.
-Here is the 
+Here are the parameters:
 
-
-```{r print_class_params-2}
-
-print("The current value of the params list is: ")
-print(params)
-
-
-```
-
+<strong>The Year is: `r params$year`</strong>
 
