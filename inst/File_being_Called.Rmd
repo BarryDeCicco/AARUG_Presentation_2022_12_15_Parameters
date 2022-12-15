@@ -15,11 +15,29 @@ params:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r load-packages, echo=FALSE}
+# Load Packages & Set Package Options
+library(xfun)         # for Rscript_call()
+library(devtools)     # for session_info()
+library(rstudioapi)   # for versionInfo()
+library(here)         # for here()
+library(rmarkdown)    # for render()
+library(knitr)        # for kable()
+library(lubridate)    # for today()
+
+```
+
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+# Parameters
+
+This file has a list of parameters which start it.  They can be changed.
+Here is the 
+
 
 ```{r print_class_params}
 
