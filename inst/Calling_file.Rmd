@@ -50,8 +50,23 @@ print(params)
 ```
 
 
+```{r render-using-book-example}
 
-```{r File-being-Called}
+# This is from:  https://zsmith27.github.io/rmarkdown_crash-course/lesson-7-parameterized-reports.html#rmarkdownrender, '12.3 rmarkdown::render() '
+
+rmarkdown::render(input = "File_being_Called.Rmd",
+                  params = list(  year = 2018,
+  start_date ="2022-01-01",
+  end_date = "2022-21_31",
+  region = "Europe",
+  data = "file.csv")
+)
+
+
+```
+
+
+```{r File-being-Called, eval=FALSE}
 
   
   
