@@ -1,5 +1,5 @@
 ---
-title: paste0("Report for ",`r params$region`," for Calendar Year: ", `r params$year`)
+title: `rpaste0("Report for ",params$region," for Calendar Year ", params$year)`
 author: "Barry DeCicco"
 date: "2022-12-15"
 output: html_document
