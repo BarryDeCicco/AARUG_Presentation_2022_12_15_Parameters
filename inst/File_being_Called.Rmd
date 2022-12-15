@@ -42,7 +42,7 @@ This file has a list of parameters which start it.  They can be changed.
 Here is the 
 
 
-```{r print_class_params}
+```{r print_class_params-2}
 
 print("The current value of the params list is: ")
 print(params)
