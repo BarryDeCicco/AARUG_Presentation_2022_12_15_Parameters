@@ -61,7 +61,7 @@ rmarkdown::render(input = "File_being_Called.Rmd",
                   params = list(  year = 2018,
   start_date ="2022-01-01",
   end_date = "2022-21_31",
-  region = "Europe",
+  region = "N. America",
   data_file = "file.csv")
 )
 
